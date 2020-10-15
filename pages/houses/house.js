@@ -186,5 +186,11 @@ Page({
   onShareAppMessage: function () {
 
   },
+
+  navigatorDetail: function(){
+    wx.navigateTo({
+      url: '/pages/detail/datail',
+    })
+  }
   
 })

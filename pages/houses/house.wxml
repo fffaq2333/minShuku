@@ -30,7 +30,8 @@
   <view class="house_list"> 
     <!-- 房源总览列表 -->
     <block wx:for="{{minShuKU_list}}" wx:key="{{item.id}}">
-      <view class="list_block">
+      
+      <view class="list_block" bindtap="navigatorDetail">
         <view class="minShuKu_image">
           <image class="image" src="{{item.minShuKu_pic}}"></image>
         </view>
