@@ -1,0 +1,64 @@
+/* pages/houses/house.wxss */
+
+
+.houst_list{
+  margin-top: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+/*  */
+.list_block{
+  display: inline-block;
+  width:50%;
+  height: 400rpx;
+  /* margin-left: 20rpx; */
+  box-sizing: border-box;
+  padding-left: 20rpx;
+  margin-top: 20rpx;
+  
+}
+
+/* 图片样式 */
+.list_block .minShuKu_image .image{
+  height: 250rpx;
+  width: 90%;
+  align-items: center;
+  border-radius: 5%;
+}
+
+/* 配置样式 */
+.list_block .setting .setting{
+  font-size: 25rpx;
+}
+
+/* 标题样式  */
+.list_block .title .title{
+  font-size: 30rpx;
+}
+
+/* 原始价格样式 */
+.list_block .price .org{
+  text-decoration:line-through;
+  color: rgb(189, 188, 188);
+  font-size: 25rpx;
+}
+
+/* 现价格样式 */
+.list_block .price .now{
+  font-size: 25rpx;
+}
+
+/* 查找窗口 */
+.search_for_it .city{
+  align-items: center;
+}
+
+
+
+.search_for_it .btn{
+  background-color:#ff5b5b;
+}

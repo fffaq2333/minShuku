@@ -1,0 +1,56 @@
+<!--pages/houses/house.wxml-->
+<!-- <view><text>{{nickName}}</text></view>
+<view><image src="{{avatarUrl}}"></image></view>
+
+<view wx:if="{{gender==0}}">性别未知</view>
+<view wx:if="{{gender==1}}">性别:男</view>
+<view wx:if="{{gender==2}}">性别:女</view>
+
+
+<view>{{province}}</view>
+<view>{{city}}</view> -->
+
+<!-- 引入wx工具脚本 -->
+<wxs src="../../utils/tool.wxs" module="tools"></wxs>
+
+
+<view>
+  <swiper>
+    <swiper-item >
+      <image src="../images/login.jpg" style="width:100%"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../images/login.jpg" style="width:100%"></image>
+    </swiper-item>
+  </swiper>
+  <view class="search_for_it">
+    <text class="city">南京市</text>
+    <button class="btn">查找房源</button>
+  </view>
+  <view class="house_list"> 
+    <!-- 房源总览列表 -->
+    <block wx:for="{{minShuKU_list}}" wx:key="{{item.id}}">
+      <view class="list_block">
+        <view class="minShuKu_image">
+          <image class="image" src="{{item.minShuKu_pic}}"></image>
+        </view>
+        <!-- 民宿配置栏 -->
+        <view class="setting">
+          <text class="setting">{{item.minShuKu_type}}.{{item.minShuKu_room}}室{{item.minShuKu_bath}}卫{{item.minShuKu_bed}}床</text>
+        </view>
+
+        <!-- 标题栏 -->
+        <view class="title">
+          <text class="title">{{tools.substring( item.minShuKu_name, 10)}}</text>
+        </view>
+
+        <view class="price">
+          <!-- 民宿价格栏 -->
+          <text class="now">￥{{item.minShuKu_cost}}</text>
+          <text class="org"> {{item.minShuKu_cost_org}}</text>
+          <text class="now">每晚</text>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

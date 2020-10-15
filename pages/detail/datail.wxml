@@ -1,0 +1,2 @@
+<!--pages/detail/datail.wxml-->
+<text>{{mydata}}</text>
