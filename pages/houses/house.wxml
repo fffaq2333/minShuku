@@ -35,6 +35,7 @@
         <view class="minShuKu_image">
           <image class="image" src="{{item.minShuKu_pic}}"></image>
         </view>
+        
         <!-- 民宿配置栏 -->
         <view class="setting">
           <text class="setting">{{item.minShuKu_type}}.{{item.minShuKu_room}}室{{item.minShuKu_bath}}卫{{item.minShuKu_bed}}床</text>

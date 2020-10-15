@@ -188,6 +188,9 @@ Page({
   },
 
   navigatorDetail: function(){
+    // wx.request({
+    //   url: 'url',
+    // })
     wx.navigateTo({
       url: '/pages/detail/datail',
     })
