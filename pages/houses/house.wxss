@@ -52,13 +52,35 @@
   font-size: 25rpx;
 }
 
-/* 查找窗口 */
-.search_for_it .city{
-  align-items: center;
+/* 查找房源框体 */
+.search_for_it{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+/* 查找房源框体字体 */
+.search_for_it .city .city{
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 
-
+/* 查找房源按钮 */
 .search_for_it .btn{
+  margin-top: 10rpx;
+  color: azure;
   background-color:#ff5b5b;
+}
+
+.swiper_size{
+  display:flex;                
+ justify-content: center;         
+}
+
+.swiper_pic{
+  width:400rpx;
+  height:400rpx;    
 }

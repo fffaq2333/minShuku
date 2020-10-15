@@ -16,15 +16,15 @@
 
 <view>
   <swiper>
-    <swiper-item >
-      <image src="../images/login.jpg" style="width:100%"></image>
+    <swiper-item class="swiper_size">
+      <image src="../images/banner.jpg" style="width:100%" class="swiper_pic"></image>
     </swiper-item>
     <swiper-item>
-      <image src="../images/login.jpg" style="width:100%"></image>
+      <image src="../images/banner2.jpg" style="width:100%"></image>
     </swiper-item>
   </swiper>
   <view class="search_for_it">
-    <text class="city">南京市</text>
+    <view class="city"><text class="city">南京市</text></view>
     <button class="btn">查找房源</button>
   </view>
   <view class="house_list"> 
